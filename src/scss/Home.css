@@ -1,0 +1,55 @@
+.Navbar {
+  height: 10vh;
+  padding: 25px 20px;
+  color: #707070;
+}
+
+.Navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Navbar nav .logo {
+  width: 40%;
+  margin-left: 100px;
+}
+
+.Navbar nav .links {
+  color: #707070;
+  text-decoration: none;
+}
+
+.Navbar nav .nav-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+.Navbar nav .nav-links .links {
+  color: #707070;
+  text-decoration: none;
+}
+
+.Navbar nav .nav-links .links h1 {
+  font-weight: 300;
+  font-size: 22px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Navbar nav .nav-links h1:active {
+  color: #707070;
+  text-decoration: none;
+}
+
+.Navbar nav .nav-links h1:hover {
+  color: black;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+/*# sourceMappingURL=Home.css.map */
