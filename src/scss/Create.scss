@@ -1,0 +1,72 @@
+.Create {
+  height: 90vh;
+  margin-top: 90px;
+  form {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    text-align: left;
+    color: #707070;
+    padding: 3rem;
+    border: #5fd687 solid;
+    width: 800px;
+    margin: 0 auto;
+    h2 {
+      margin: 0 auto;
+      padding-bottom: 3rem;
+    }
+    .current-ingredients {
+      font-style: italic;
+      font-size: 12px;
+      list-style: none;
+      margin-top: -5px;
+      margin-left: 110px;
+      //   border: pink solid;
+      span {
+        margin-left: 6px;
+        li {
+          display: inline-block;
+          margin: 0 2px;
+        }
+      }
+    }
+    label,
+    p {
+      padding: 10px;
+      text-align: left;
+      //   border: green solid;
+      width: 550px;
+      margin: 0 auto;
+      input,
+      textarea {
+        border: none;
+        border-bottom: solid;
+        border-width: thin;
+        color: #707070;
+        margin-left: 130px;
+        width: 250px;
+      }
+    }
+    .input-mins {
+      margin-left: 88px;
+    }
+    .add {
+      font-weight: 700;
+      font-size: 22px;
+      border: none;
+      background: none;
+      color: #707070;
+      margin-left: 10px;
+    }
+    .btn-submit {
+      width: 70px;
+      border-radius: 30px;
+      border: none;
+      padding: 5px;
+      background: #5fd687;
+      color: white;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+}

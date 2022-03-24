@@ -13,7 +13,7 @@ const Search = () => {
   const { error, isPending, data } = useFetch(url);
 
   return (
-    <div>
+    <div className="Search">
       <h2 className="page-title">Recipes Including "{query}"</h2>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}

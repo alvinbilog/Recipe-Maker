@@ -45,8 +45,8 @@ const Create = () => {
   }, [data]);
   return (
     <div className="Create">
-      <h2>Add New Recipe</h2>
       <form onSubmit={handleSubmit}>
+        <h2>Add New Recipe</h2>
         <label>
           <span>Recipe Title:</span>
           <input
@@ -57,7 +57,7 @@ const Create = () => {
           />
         </label>
         <label>
-          <span>Recipe Method:</span>
+          <span>Method: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>
           <textarea
             onChange={e => setMethod(e.target.value)}
             value={method}
@@ -65,34 +65,37 @@ const Create = () => {
           ></textarea>
         </label>
         <label>
-          <span>Recipe Ingredients:</span>
+          <span>Ingredients:</span>
           <input
             type="text"
             onChange={e => setNewIngredients(e.target.value)}
             value={newIngredients}
             ref={ingredientsInput}
           />
-          <button className="btn" onClick={handleAdd}>
-            add
+          <button className="btn add" onClick={handleAdd}>
+            +
           </button>
         </label>
-        <p>
+        <p className="current-ingredients">
           Current Ingredients:
-          {ingredients.map(ingredients => (
-            <li key={ingredients}>{ingredients}</li>
-          ))}
+          <span>
+            {ingredients.map(ingredients => (
+              <li key={ingredients}>{ingredients},</li>
+            ))}
+          </span>
         </p>
 
         <label>
-          <span>Cooking Time (Minutes):</span>
+          <span>Minutes to make:</span>
           <input
             type="number"
             onChange={e => setCookingTime(e.target.value)}
             value={cookingTime}
             required
+            className="input-mins"
           />
         </label>
-        <button className="btn">Submit</button>
+        <button className="btn-submit">Submit</button>
       </form>
     </div>
   );

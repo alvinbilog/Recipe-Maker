@@ -1,0 +1,51 @@
+.Navbar {
+  height: 10vh;
+  //   border: red solid;
+  padding: 25px 20px;
+  color: #707070;
+  nav {
+    display: flex;
+    .logo {
+      width: 40%;
+      //   border: green solid;
+      margin-left: 100px;
+    }
+    .links {
+      color: #707070;
+      text-decoration: none;
+    }
+    .nav-links {
+      //   border: blue solid;
+      width: 60%;
+      display: flex;
+      justify-content: right;
+      margin-right: 50px;
+      cursor: pointer;
+      .searchbar-container {
+        margin-right: 50px;
+        font-weight: 300;
+        font-size: 22px;
+      }
+      .links {
+        color: #707070;
+        text-decoration: none;
+        position: relative;
+        // border: solid red;
+        h1 {
+          font-weight: 300;
+          font-size: 22px;
+          transition: all 0.3s ease;
+        }
+      }
+      h1:active {
+        color: #707070;
+        text-decoration: none;
+      }
+
+      h1:hover {
+        color: black;
+        transform: scale(1.08);
+      }
+    }
+  }
+}

@@ -1,1 +1,87 @@
-/* No CSS *//*# sourceMappingURL=Create.css.map */
+.Create {
+  height: 90vh;
+  margin-top: 90px;
+}
+
+.Create form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  color: #707070;
+  padding: 3rem;
+  border: #5fd687 solid;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.Create form h2 {
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.Create form .current-ingredients {
+  font-style: italic;
+  font-size: 12px;
+  list-style: none;
+  margin-top: -5px;
+  margin-left: 110px;
+}
+
+.Create form .current-ingredients span {
+  margin-left: 6px;
+}
+
+.Create form .current-ingredients span li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.Create form label,
+.Create form p {
+  padding: 10px;
+  text-align: left;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.Create form label input,
+.Create form label textarea,
+.Create form p input,
+.Create form p textarea {
+  border: none;
+  border-bottom: solid;
+  border-width: thin;
+  color: #707070;
+  margin-left: 130px;
+  width: 250px;
+}
+
+.Create form .input-mins {
+  margin-left: 88px;
+}
+
+.Create form .add {
+  font-weight: 700;
+  font-size: 22px;
+  border: none;
+  background: none;
+  color: #707070;
+  margin-left: 10px;
+}
+
+.Create form .btn-submit {
+  width: 70px;
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+  background: #5fd687;
+  color: white;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=Create.css.map */

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import "../scss/Searchbar.css";
 
 function Searchbar() {
   const [term, setTerm] = useState("");
@@ -12,12 +13,13 @@ function Searchbar() {
   return (
     <div className="Searchbar">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="search">Search:</label>
+        <label htmlFor="search"></label>
         <input
           type="text"
           id="search"
           onChange={e => setTerm(e.target.value)}
           required
+          placeholder="Search"
         />
       </form>
     </div>

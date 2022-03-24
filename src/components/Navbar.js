@@ -11,18 +11,20 @@ const Navbar = () => {
             <h1>Recipes Maker</h1>
           </Link>
         </div>
-        {/* <Searchbar /> */}
 
         <div className="nav-links">
-          <Link to="/recipe" className="links">
+          {/* <Link to="/recipe" className="links">
             <h1>Recipes</h1>
-          </Link>
+          </Link> */}
+          <div className="searchbar-container">
+            <Searchbar />
+          </div>
           <Link to="/create" className="links">
             <h1>Create</h1>
           </Link>
-          <Link to="/contact" className="links">
+          {/* <Link to="/contact" className="links">
             <h1>Contacts</h1>
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </div>

@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=Recipe.css.map */
+.Recipe {
+  height: 90vh;
+  margin-top: 40px;
+}
+
+.Recipe .recipe-container {
+  margin: 0 auto;
+  width: 90vh;
+}
+
+.Recipe .recipe-container .title {
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.Recipe .recipe-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.Recipe .recipe-container .container .img-container {
+  border: #707070 solid;
+  opacity: 40%;
+  width: 550px;
+  height: 300px;
+  margin-right: 50px;
+}
+
+.Recipe .recipe-container .container .text-container {
+  color: #707070;
+  min-width: 200px;
+  width: 850px;
+  line-height: 35px;
+}
+
+.Recipe .recipe-container .container .text-container p {
+  margin-bottom: 15px;
+}
+
+.Recipe .recipe-container .container .text-container ul {
+  list-style: none;
+  margin-bottom: 15px;
+  color: #5fd687;
+}
+
+.Recipe .recipe-container .container .text-container .method {
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=Recipe.css.map */

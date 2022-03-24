@@ -1,55 +1,100 @@
-.Navbar {
-  height: 10vh;
-  padding: 25px 20px;
-  color: #707070;
-}
-
-.Navbar nav {
+.Home {
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
 }
 
-.Navbar nav .logo {
-  width: 40%;
-  margin-left: 100px;
-}
-
-.Navbar nav .links {
+.Home .greetings {
+  width: 380px;
   color: #707070;
-  text-decoration: none;
+  margin-top: 7rem;
+  margin-left: 75px;
 }
 
-.Navbar nav .nav-links {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  cursor: pointer;
+.Home .greetings h1 {
+  font-weight: 700;
+  font-size: 55px;
+  font-style: bold;
 }
 
-.Navbar nav .nav-links .links {
-  color: #707070;
-  text-decoration: none;
-}
-
-.Navbar nav .nav-links .links h1 {
+.Home .greetings p {
+  margin-top: 1rem;
+  letter-spacing: 1.5px;
+  width: 420px;
   font-weight: 300;
-  font-size: 22px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  line-height: 30px;
 }
 
-.Navbar nav .nav-links h1:active {
-  color: #707070;
-  text-decoration: none;
+.Home .greetings button {
+  margin-top: 40px;
+  padding: 3px 10px;
+  margin-right: 60px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #707070;
+  color: ghostwhite;
 }
 
-.Navbar nav .nav-links h1:hover {
-  color: black;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+.Home .greetings button span {
+  position: relative;
+  z-index: 10;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.Home .greetings button::before,
+.Home .greetings button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.Home .greetings button::before {
+  content: "";
+  background: #5fd687;
+  width: 120%;
+  left: -10%;
+  -webkit-transform: skew(30deg);
+          transform: skew(30deg);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.Home .greetings button:hover::before {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+.Home .recipe-container {
+  margin-left: 85px;
+}
+
+.Home .recipe-container img {
+  width: 750px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Home .show-recipe {
+  border: blue solid;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -1,44 +1,82 @@
-.Navbar {
-  height: 10vh;
-  //   border: red solid;
-  padding: 25px 20px;
-  color: #707070;
-  nav {
-    display: flex;
-    .logo {
-      width: 40%;
-      //   border: green solid;
-      margin-left: 100px;
-    }
-    .links {
-      color: #707070;
-      text-decoration: none;
-    }
-    .nav-links {
-      //   border: blue solid;
-      width: 60%;
-      display: flex;
-      justify-content: space-around;
+.Home {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  // border: red solid;
 
+  .greetings {
+    width: 380px;
+    color: #707070;
+    margin-top: 7rem;
+    margin-left: 75px;
+    h1 {
+      font-weight: 700;
+      font-size: 55px;
+      font-style: bold;
+    }
+    p {
+      margin-top: 1rem;
+      letter-spacing: 1.5px;
+      width: 420px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+    button {
+      margin-top: 40px;
+      padding: 3px 10px;
+      margin-right: 60px;
+      outline: none;
       cursor: pointer;
-      .links {
-        color: #707070;
-        text-decoration: none;
-        h1 {
-          font-weight: 300;
-          font-size: 22px;
-          transition: all 0.3s ease;
-        }
-      }
-      h1:active {
-        color: #707070;
-        text-decoration: none;
-      }
-
-      h1:hover {
-        color: black;
-        transform: scale(1.08);
+      border: none;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 0.05rem;
+      font-size: 17px;
+      border-radius: 500px;
+      overflow: hidden;
+      background: #707070;
+      color: ghostwhite;
+      span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
       }
     }
+    button::before,
+    button::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    button::before {
+      content: "";
+      background: #5fd687;
+      width: 120%;
+      left: -10%;
+      transform: skew(30deg);
+      transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+
+    button:hover::before {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+  .recipe-container {
+    margin-left: 85px;
+    img {
+      // width: 750px;
+      width: 750px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .show-recipe {
+    border: blue solid;
+    margin: 0 auto;
   }
 }
