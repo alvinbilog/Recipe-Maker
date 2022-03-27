@@ -15,7 +15,8 @@ const Create = () => {
   const { postData, data, error } = useFetch(
     // "http://localhost:3000/recipes",
     // "POST"
-    "https://alvs-recipe-maker.herokuapp.com/"
+    "https://alvs-recipe-maker.herokuapp.com/",
+    "POST"
   );
 
   const handleSubmit = e => {
