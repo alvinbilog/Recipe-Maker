@@ -6,7 +6,7 @@ import "../../scss/Home.css";
 
 const Home = () => {
   const { data, isPending, error } = useFetch(
-    "https://alvs-recipe-maker.herokuapp.com/"
+    "https://alvs-recipe-maker.herokuapp.com/recipes"
   );
   // const { data, isPending, error } = useFetch("http://localhost:3000/recipes");
   return (

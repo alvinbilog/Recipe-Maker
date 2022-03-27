@@ -7,7 +7,7 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [method, setMethod] = useState("");
   const [cookingTime, setCookingTime] = useState("");
-  const [newIngredients, setNewIngredients] = useState("");
+  const [newIngredients, setNewIngredients] = useState;
   const [ingredients, setIngredients] = useState([]);
   const ingredientsInput = useRef(null);
   const history = useHistory();
@@ -15,7 +15,7 @@ const Create = () => {
   const { postData, data, error } = useFetch(
     // "http://localhost:3000/recipes",
     // "POST"
-    "https://alvs-recipe-maker.herokuapp.com/",
+    "https://alvs-recipe-maker.herokuapp.com/recipes",
     "POST"
   );
 
