@@ -5,7 +5,8 @@ import "../../scss/Recipe.css";
 
 const Recipe = () => {
   const { id } = useParams();
-  const url = "http://localhost:3000/recipes/" + id;
+  const url = "https://alvs-recipe-maker.herokuapp.com/" + id;
+  // const url = "http://localhost:3000/recipes/" + id;
   const { error, isPending, data: recipe } = useFetch(url);
 
   return (

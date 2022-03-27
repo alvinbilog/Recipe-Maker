@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 import "../../scss/Home.css";
 
 const Home = () => {
-  const { data, isPending, error } = useFetch("http://localhost:3000/recipes");
+  const { data, isPending, error } = useFetch(
+    "https://alvs-recipe-maker.herokuapp.com/"
+  );
+  // const { data, isPending, error } = useFetch("http://localhost:3000/recipes");
   return (
     <div className="Home">
       <div className="greetings">
