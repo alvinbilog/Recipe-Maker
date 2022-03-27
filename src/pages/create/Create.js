@@ -13,8 +13,9 @@ const Create = () => {
   const history = useHistory();
 
   const { postData, data, error } = useFetch(
-    "http://localhost:3000/recipes",
-    "POST"
+    // "http://localhost:3000/recipes",
+    // "POST"
+    "https://alvs-recipe-maker.herokuapp.com/"
   );
 
   const handleSubmit = e => {
